@@ -1,73 +1,85 @@
-# React + TypeScript + Vite
+# Abhay's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive portfolio website built with React, TypeScript, and Vite. This project showcases a collection of projects, services, and a personal journey using advanced animations and smooth scrolling effects.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Scrollytelling Experience**: Engaging narrative flow tailored to guide visitors through your professional journey.
+- **Smooth Scrolling**: enhanced scrolling experience powered by [Lenis](https://github.com/darkroomengineering/lenis).
+- **Advanced Animations**: Dynamic and interactive elements using [GSAP](https://gsap.com/) and [Lottie](https://airbnb.io/lottie/).
+- **Responsive Design**: Fully responsive layout built with [Tailwind CSS](https://tailwindcss.com/), ensuring a great experience on all devices.
+- **Modular Architecture**: Clean code structure with separate components for Hero, Highlights, Projects, Services, and more.
+- **Type Safety**: Developed with TypeScript for reliability and maintainability.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend Framework**: [React 19](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Animation**: GSAP, Lottie-web
+- **Scroll Management**: Lenis
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Ensure you have Node.js installed on your machine.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/portfolio.git
+    cd portfolio
+    ```
+
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+-   **Start Development Server**:
+    ```bash
+    npm run dev
+    ```
+    Runs the app in development mode. Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+-   **Build for Production**:
+    ```bash
+    npm run build
+    ```
+    Builds the app for production to the `dist` folder.
+
+-   **Preview Production Build**:
+    ```bash
+    npm run preview
+    ```
+    Locally preview the production build.
+
+-   **Lint Code**:
+    ```bash
+    npm run lint
+    ```
+    Runs ESLint to check for code quality issues.
+
+## Project Structure
+
+```bash
+src/
+├── assets/         # Static assets (images, fonts, etc.)
+├── components/     # Reusable UI components
+├── data/           # Static data and configuration
+├── hooks/          # Custom React hooks
+├── sections/       # Main page sections (Hero, Projects, Contact, etc.)
+├── types/          # TypeScript type definitions
+├── App.tsx         # Main application component
+├── main.tsx        # Entry point
+└── index.css       # Global styles and Tailwind imports
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## License
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is open source and available under the [MIT License](LICENSE).
