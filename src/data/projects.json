@@ -1,0 +1,70 @@
+[
+    {
+        "id": "project-1",
+        "title": "Neon Horizons",
+        "subtitle": "Immersive 3D Web Experience",
+        "year": 2024,
+        "role": "Lead Developer",
+        "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+            },
+            {
+                "type": "image",
+                "url": "https://images.unsplash.com/photo-1614741118830-c6a6145e3877?q=80&w=2564&auto=format&fit=crop"
+            }
+        ],
+        "summary": "A futuristic marketing site for a VR gaming platform, featuring WebGL interactions and spatial audio.",
+        "tags": [
+            "WebGL",
+            "Three.js",
+            "React"
+        ]
+    },
+    {
+        "id": "project-2",
+        "title": "Mono Finance",
+        "subtitle": "Minimalist Fintech Dashboard",
+        "year": 2025,
+        "role": "Product Designer",
+        "cover": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
+            },
+            {
+                "type": "image",
+                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
+            }
+        ],
+        "summary": "A clean, data-heavy dashboard for personal finance tracking with real-time visualization.",
+        "tags": [
+            "Dashboard",
+            "Fintech",
+            "Data Viz"
+        ]
+    },
+    {
+        "id": "project-3",
+        "title": "Echoes of Nature",
+        "subtitle": "Digital Conservation Campaign",
+        "year": 2023,
+        "role": "Full Stack Dev",
+        "cover": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=2670&auto=format&fit=crop",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=2670&auto=format&fit=crop"
+            }
+        ],
+        "summary": "An award-winning scroll-driven storytelling site raising awareness for endangered ecosystems.",
+        "tags": [
+            "Scrollytelling",
+            "GSAP",
+            "Activism"
+        ]
+    }
+]
