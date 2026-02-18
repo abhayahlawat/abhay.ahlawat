@@ -48,6 +48,10 @@ body {
   overflow-x: hidden;
 }
 
+body.scroll-locked {
+  overflow: hidden !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #ffffff;
