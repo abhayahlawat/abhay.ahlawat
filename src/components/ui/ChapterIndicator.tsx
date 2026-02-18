@@ -5,9 +5,10 @@ const chapters = [
     { id: 'story', number: '02', title: 'THE PHILOSOPHY' },
     { id: 'work', number: '03', title: 'THE CREATION' },
     { id: 'services', number: '04', title: 'THE CAPABILITIES' },
-    { id: 'process', number: '05', title: 'THE METHOD' },
-    { id: 'highlights', number: '06', title: 'THE PLAYGROUND' },
-    { id: 'contact', number: '07', title: 'THE CONNECTION' }
+    { id: 'experience', number: '05', title: 'THE JOURNEY' },
+    { id: 'process', number: '06', title: 'THE METHOD' },
+    { id: 'highlights', number: '07', title: 'THE PLAYGROUND' },
+    { id: 'contact', number: '08', title: 'THE CONNECTION' }
 ];
 
 const ChapterIndicator: React.FC = () => {

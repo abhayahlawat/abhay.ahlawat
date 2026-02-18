@@ -9,6 +9,7 @@ import Services from './sections/Services';
 import Highlights from './sections/Highlights';
 import Process from './sections/Process';
 import Contact from './sections/Contact';
+import Experience from './sections/Experience';
 import FlowingMenu from './components/ui/FlowingMenu';
 import ChapterIndicator from './components/ui/ChapterIndicator';
 import WelcomeScreen from './components/WelcomeScreen';
@@ -82,6 +83,7 @@ function App() {
             { link: '#story', text: 'Philosophy', image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=600&auto=format&fit=crop' },
             { link: '#work', text: 'Creation', image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop' },
             { link: '#services', text: 'Capabilities', image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop' },
+            { link: '#experience', text: 'The Journey', image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop' },
             { link: '#process', text: 'Method', image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop' },
             { link: '#highlights', text: 'Playground', image: 'https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?q=80&w=600&auto=format&fit=crop' },
             { link: '#contact', text: 'Connection', image: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=600&auto=format&fit=crop' }
@@ -98,6 +100,7 @@ function App() {
       <StoryStrip />
       <ProjectsPinned />
       <Services />
+      <Experience />
       <Process />
       <Highlights />
       <Contact />

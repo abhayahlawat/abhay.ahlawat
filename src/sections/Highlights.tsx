@@ -80,7 +80,7 @@ const Highlights: React.FC = () => {
             {/* Header */}
             <div className="max-w-7xl mx-auto mb-10 sm:mb-20 border-b border-zinc-800 pb-6 flex justify-between items-end">
                 <div>
-                    <span className="block text-xs font-mono text-zinc-500 mb-2">CHAPTER 06</span>
+                    <span className="block text-xs font-mono text-zinc-500 mb-2">CHAPTER 07</span>
                     <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white tracking-wide sm:tracking-widest uppercase">The Archive</h2>
                 </div>
                 <div className="hidden md:block text-right">
