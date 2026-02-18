@@ -75,13 +75,13 @@ const Highlights: React.FC = () => {
     }, [activeItem]);
 
     return (
-        <section id="highlights" ref={sectionRef} className="py-32 px-6 bg-zinc-950 text-zinc-300 min-h-screen relative cursor-default">
+        <section id="highlights" ref={sectionRef} className="py-16 sm:py-32 px-4 sm:px-6 bg-zinc-950 text-zinc-300 min-h-screen relative cursor-default">
 
             {/* Header */}
-            <div className="max-w-7xl mx-auto mb-20 border-b border-zinc-800 pb-6 flex justify-between items-end">
+            <div className="max-w-7xl mx-auto mb-10 sm:mb-20 border-b border-zinc-800 pb-6 flex justify-between items-end">
                 <div>
                     <span className="block text-xs font-mono text-zinc-500 mb-2">CHAPTER 06</span>
-                    <h2 className="text-4xl md:text-6xl font-black text-white tracking-widest uppercase">The Archive</h2>
+                    <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-white tracking-wide sm:tracking-widest uppercase">The Archive</h2>
                 </div>
                 <div className="hidden md:block text-right">
                     <span className="block text-xs font-mono text-zinc-500">SELECTED EXPERIMENTS</span>
@@ -99,9 +99,9 @@ const Highlights: React.FC = () => {
                             onMouseEnter={() => setActiveItem(index)}
                             onMouseLeave={() => setActiveItem(null)}
                         >
-                            <div className="flex items-center gap-8">
-                                <span className="font-mono text-xs text-zinc-600 group-hover:text-white transition-colors">EXP_{item.id}</span>
-                                <h3 className="text-2xl md:text-4xl font-bold text-zinc-400 group-hover:text-white transition-colors">{item.title}</h3>
+                            <div className="flex items-center gap-3 sm:gap-8">
+                                <span className="font-mono text-xs text-zinc-600 group-hover:text-white transition-colors hidden sm:inline">EXP_{item.id}</span>
+                                <h3 className="text-lg sm:text-2xl md:text-4xl font-bold text-zinc-400 group-hover:text-white transition-colors">{item.title}</h3>
                             </div>
                             <div className="flex gap-8 text-sm font-mono text-zinc-600">
                                 <span className="hidden md:inline-block group-hover:text-zinc-400 transition-colors">{item.category}</span>
@@ -115,7 +115,7 @@ const Highlights: React.FC = () => {
             {/* Floating Preview Window (Fixed to viewport, moves with mouse) */}
             <div
                 ref={cursorRef}
-                className="fixed top-0 left-0 w-80 h-56 pointer-events-none z-50 overflow-hidden rounded-lg shadow-2xl opacity-0"
+                className="fixed top-0 left-0 w-80 h-56 pointer-events-none z-50 overflow-hidden rounded-lg shadow-2xl opacity-0 hidden md:block"
                 style={{ transform: 'translate(-50%, -50%)' }}
             >
                 {/* Content changes based on active item */}

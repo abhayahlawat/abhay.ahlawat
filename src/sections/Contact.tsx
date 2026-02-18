@@ -1,8 +1,8 @@
 const Contact: React.FC = () => {
     return (
-        <section id="contact" className="py-20 px-6 bg-black text-white min-h-screen flex flex-col justify-center">
+        <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 bg-black text-white min-h-screen flex flex-col justify-center">
             <div className="max-w-4xl mx-auto w-full">
-                <h2 className="text-6xl font-bold mb-10">Get in touch</h2>
+                <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-10">Get in touch</h2>
                 <form className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <input type="text" placeholder="Name" className="bg-transparent border-b border-white/50 py-4 focus:border-white outline-none transition-colors" />
@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
                     <textarea placeholder="Message" rows={4} className="w-full bg-transparent border-b border-white/50 py-4 focus:border-white outline-none transition-colors"></textarea>
                     <button
                         type="submit"
-                        className="group relative px-8 py-3 bg-transparent border border-white text-white font-bold uppercase tracking-widest overflow-hidden rounded-full mt-4 transition-colors hover:text-black cursor-pointer"
+                        className="group relative px-6 sm:px-8 py-3 bg-transparent border border-white text-white font-bold uppercase tracking-widest overflow-hidden rounded-full mt-6 transition-colors hover:text-black cursor-pointer text-sm sm:text-base"
                     >
                         <span className="relative z-10 transition-colors duration-300">Send Message</span>
                         <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />

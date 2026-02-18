@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
 
                 {/* Prologue State */}
                 <div ref={prologueRef} className="absolute inset-0 flex items-center justify-center z-20 bg-white">
-                    <p className="text-xl md:text-3xl font-light italic tracking-widest text-zinc-500">
+                    <p className="text-lg sm:text-xl md:text-3xl font-light italic tracking-widest text-zinc-500">
                         Chapter 01 <br />
                         <span className="not-italic font-bold text-black mt-2 block">The Spark</span>
                     </p>
@@ -54,10 +54,10 @@ const Hero: React.FC = () => {
 
                 {/* Main Title State */}
                 <div ref={titleRef} className="z-10 text-center opacity-0">
-                    <h1 className="text-[12vw] leading-[0.9] font-black tracking-tighter mix-blend-exclusion text-black">
+                    <h1 className="text-[12vw] leading-[0.85] sm:leading-[0.9] font-black tracking-tighter mix-blend-exclusion text-black">
                         VISUAL<br />STORYTELLER
                     </h1>
-                    <p className="mt-8 text-xl max-w-md mx-auto font-medium">
+                    <p className="mt-4 sm:mt-8 text-base sm:text-xl max-w-md mx-auto font-medium px-2">
                         Bridging the gap between cinematic narrative and digital product design.
                     </p>
                 </div>

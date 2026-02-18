@@ -36,16 +36,16 @@ const StoryStrip: React.FC = () => {
 
     return (
         <div id="story" className="bg-black">
-            <section ref={containerRef} className="h-screen text-white flex flex-col justify-center items-center px-6 overflow-hidden">
+            <section ref={containerRef} className="h-screen text-white flex flex-col justify-center items-center px-4 sm:px-6 overflow-hidden">
                 <div ref={textRef} className="max-w-4xl text-center relative w-full h-full flex justify-center items-center">
                     {/* Position absolute so they overlap in the center */}
-                    <p className="reveal-text absolute text-4xl md:text-7xl font-medium leading-tight opacity-0">
+                    <p className="reveal-text absolute text-2xl sm:text-4xl md:text-7xl font-medium leading-tight opacity-0">
                         I believe that every pixel tells a story.
                     </p>
-                    <p className="reveal-text absolute text-4xl md:text-7xl font-medium leading-tight text-zinc-400 opacity-0">
+                    <p className="reveal-text absolute text-2xl sm:text-4xl md:text-7xl font-medium leading-tight text-zinc-400 opacity-0">
                         From concept to code, I craft digital experiences that resonate and engage.
                     </p>
-                    <p className="reveal-text absolute text-4xl md:text-7xl font-medium leading-tight text-white opacity-0">
+                    <p className="reveal-text absolute text-2xl sm:text-4xl md:text-7xl font-medium leading-tight text-white opacity-0">
                         Building the future, one scroll at a time.
                     </p>
                 </div>

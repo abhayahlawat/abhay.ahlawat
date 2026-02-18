@@ -99,20 +99,20 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onComplete }) => {
                 className="absolute inset-0 opacity-[0.04] pointer-events-none"
                 style={{
                     backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)",
-                    backgroundSize: "24px 24px"
+                    backgroundSize: "20px 20px"
                 }}
             />
 
             {/* Name */}
-            <div ref={nameRef} className="relative z-10 flex flex-wrap justify-center gap-x-[0.05em] overflow-hidden px-4">
+            <div ref={nameRef} className="relative z-10 flex flex-wrap justify-center gap-x-[0.02em] sm:gap-x-[0.05em] overflow-hidden px-3 sm:px-4 max-w-[95vw] sm:max-w-none">
                 {name.split('').map((char, i) => (
                     <span
                         key={i}
                         className="welcome-letter inline-block text-white font-black tracking-tighter leading-none"
                         style={{
-                            fontSize: 'clamp(2rem, 8vw, 7rem)',
+                            fontSize: 'clamp(1.5rem, 7vw, 7rem)',
                             transformOrigin: 'bottom center',
-                            ...(char === ' ' ? { width: '0.3em' } : {})
+                            ...(char === ' ' ? { width: '0.25em' } : {})
                         }}
                     >
                         {char === ' ' ? '\u00A0' : char}
@@ -123,14 +123,14 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onComplete }) => {
             {/* Divider line */}
             <div
                 ref={lineRef}
-                className="relative z-10 w-24 h-px bg-white/40 mt-6 mb-4 origin-center"
+                className="relative z-10 w-16 sm:w-24 h-px bg-white/40 mt-4 sm:mt-6 mb-3 sm:mb-4 origin-center"
                 style={{ transform: 'scaleX(0)' }}
             />
 
             {/* Tagline */}
             <p
                 ref={taglineRef}
-                className="relative z-10 text-white/60 text-sm md:text-base tracking-[0.3em] uppercase font-light opacity-0"
+                className="relative z-10 text-white/60 text-xs sm:text-sm md:text-base tracking-[0.15em] sm:tracking-[0.3em] uppercase font-light opacity-0"
             >
                 Creative Developer
             </p>

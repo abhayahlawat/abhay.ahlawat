@@ -40,7 +40,7 @@ const FlowingMenu: React.FC<FlowingMenuProps> = ({
 }) => {
     return (
         <div className="w-full h-full overflow-hidden" style={{ backgroundColor: bgColor }}>
-            <nav className="flex flex-col h-full m-0 p-0 pt-24">
+            <nav className="flex flex-col h-full m-0 p-0 pt-16 sm:pt-24">
                 {items.map((item, idx) => (
                     <MenuItem
                         key={idx}
@@ -160,7 +160,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
             style={{ borderTop: isFirst ? 'none' : `1px solid ${borderColor}` }}
         >
             <a
-                className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-[4vh]"
+                className="flex items-center justify-center h-full relative cursor-pointer uppercase no-underline font-semibold text-[3vh] sm:text-[4vh]"
                 href={link}
                 onClick={onItemClick}
                 onMouseEnter={handleMouseEnter}
@@ -177,9 +177,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
                 <div className="h-full w-fit flex" ref={marqueeInnerRef}>
                     {[...Array(repetitions)].map((_, idx) => (
                         <div className="marquee-part flex items-center flex-shrink-0" key={idx} style={{ color: marqueeTextColor }}>
-                            <span className="whitespace-nowrap uppercase font-normal text-[4vh] leading-[1] px-[1vw]">{text}</span>
+                            <span className="whitespace-nowrap uppercase font-normal text-[3vh] sm:text-[4vh] leading-[1] px-[2vw] sm:px-[1vw]">{text}</span>
                             <div
-                                className="w-[200px] h-[7vh] my-[2em] mx-[2vw] py-[1em] rounded-[50px] bg-cover bg-center"
+                                className="w-[100px] sm:w-[200px] h-[5vh] sm:h-[7vh] my-[1.5em] sm:my-[2em] mx-[2vw] py-[0.5em] sm:py-[1em] rounded-[50px] bg-cover bg-center"
                                 style={{ backgroundImage: `url(${image})` }}
                             />
                         </div>

@@ -44,12 +44,12 @@ const Process: React.FC = () => {
                     {/* The moving track */}
                     <div ref={sectionRef} className="flex flex-nowrap h-full">
                         {steps.map((step) => (
-                            <div key={step.number} className="w-screen h-full flex flex-col justify-center px-10 md:px-32 shrink-0 border-r border-zinc-200">
-                                <span className="text-9xl font-black text-transparent stroke-black stroke-2 opacity-10" style={{ WebkitTextStroke: '2px black' }}>
+                            <div key={step.number} className="w-screen h-full flex flex-col justify-center px-6 sm:px-10 md:px-32 shrink-0 border-r border-zinc-200">
+                                <span className="text-6xl sm:text-9xl font-black text-transparent stroke-black stroke-2 opacity-10" style={{ WebkitTextStroke: '2px black' }}>
                                     {step.number}
                                 </span>
-                                <h4 className="text-6xl md:text-8xl font-black -mt-10 mb-6">{step.title}</h4>
-                                <p className="text-2xl md:text-3xl max-w-2xl font-light text-zinc-600">{step.desc}</p>
+                                <h4 className="text-4xl sm:text-6xl md:text-8xl font-black -mt-6 sm:-mt-10 mb-4 sm:mb-6">{step.title}</h4>
+                                <p className="text-lg sm:text-2xl md:text-3xl max-w-2xl font-light text-zinc-600">{step.desc}</p>
                             </div>
                         ))}
                     </div>

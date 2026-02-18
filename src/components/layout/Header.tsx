@@ -5,8 +5,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onMenuClick, isOpen }) => {
     return (
-        <header className="fixed top-0 left-0 w-full z-50 mix-blend-difference text-white p-6 flex justify-between items-center">
-            <div className="text-xl font-bold tracking-tighter">ABHAY AHLAWAT</div>
+        <header className="fixed top-0 left-0 w-full z-50 mix-blend-difference text-white p-4 sm:p-6 flex justify-between items-center">
+            <div className="text-base sm:text-xl font-bold tracking-tighter">ABHAY AHLAWAT</div>
 
             <button
                 onClick={onMenuClick}

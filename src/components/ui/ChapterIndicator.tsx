@@ -55,10 +55,10 @@ const ChapterIndicator: React.FC = () => {
     }, []);
 
     return (
-        <div className="fixed bottom-6 left-6 z-50 mix-blend-difference text-white font-bold tracking-widest text-sm md:text-base pointer-events-none">
+        <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 z-50 mix-blend-difference text-white font-bold tracking-widest text-xs sm:text-sm md:text-base pointer-events-none">
             <span>{currentChapter.number}</span>
-            <span className="mx-2">—</span>
-            <span>{currentChapter.title}</span>
+            <span className="mx-1 sm:mx-2">—</span>
+            <span className="hidden sm:inline">{currentChapter.title}</span>
         </div>
     );
 };
