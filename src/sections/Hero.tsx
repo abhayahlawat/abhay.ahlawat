@@ -4,7 +4,7 @@ import LottiePlayer from '../components/scrolly/LottiePlayer';
 import circleAnimation from '../assets/circle.json';
 
 const Hero: React.FC = () => {
-    const containerRef = useRef<HTMLDivElement>(null); // Pinned element
+    const containerRef = useRef<HTMLDivElement>(null);
     const prologueRef = useRef<HTMLDivElement>(null);
     const titleRef = useRef<HTMLDivElement>(null);
 
@@ -14,25 +14,22 @@ const Hero: React.FC = () => {
                 scrollTrigger: {
                     trigger: containerRef.current,
                     start: "top top",
-                    end: "+=200%", // Pin duration
+                    end: "+=100%",
                     pin: true,
-                    scrub: 1,
-                    refreshPriority: 1 // Calculation priority
+                    scrub: 2,
+                    refreshPriority: 1
                 }
             });
 
-            // Prologue animation sequence:
-            // 1. Prologue fades out.
-            // 2. Title scales in and reveals.
 
-            tl.to(prologueRef.current, { opacity: 0, scale: 0.8, duration: 1 })
+            tl.to(prologueRef.current, { opacity: 0, scale: 0.8, duration: 0.6, ease: "power2.inOut" })
                 .fromTo(titleRef.current,
-                    { opacity: 0, scale: 1.2, filter: "blur(10px)" },
-                    { opacity: 1, scale: 1, filter: "blur(0px)", duration: 2 },
-                    "-=0.5"
+                    { opacity: 0, scale: 1.15, filter: "blur(12px)" },
+                    { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.9, ease: "power3.out" },
+                    "-=0.2"
                 );
 
-        }, containerRef); // Scope to pinned element
+        }, containerRef);
 
         return () => ctx.revert();
     }, []);
