@@ -31,7 +31,7 @@ const ProjectsPinned: React.FC = () => {
     }, []);
 
     return (
-        <section ref={containerRef} id="work" className="bg-white text-black py-20">
+        <section ref={containerRef} id="work" className="bg-white text-black pt-20 pb-0">
             <div className="px-6 mb-20">
                 <h2 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter">SELECTED<br />WORKS</h2>
             </div>
