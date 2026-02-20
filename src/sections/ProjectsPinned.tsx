@@ -57,6 +57,17 @@ const ProjectsPinned: React.FC = () => {
                                     </span>
                                 ))}
                             </div>
+                            {(project as any).liveUrl && (
+                                <a
+                                    href={(project as any).liveUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group inline-flex items-center gap-2 mt-6 text-sm font-bold uppercase tracking-widest border-b-2 border-black pb-0.5 hover:opacity-50 transition-opacity w-fit"
+                                >
+                                    Live Site
+                                    <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
+                                </a>
+                            )}
                         </div>
                         <div className="w-full md:w-1/2 bg-zinc-100 h-[40vh] md:h-screen overflow-hidden relative">
                             <img src={project.cover} alt={project.title} className="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" />

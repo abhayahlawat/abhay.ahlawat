@@ -1,70 +1,116 @@
 [
     {
         "id": "project-1",
-        "title": "Neon Horizons",
-        "subtitle": "Immersive 3D Web Experience",
+        "title": "Allure Art",
+        "subtitle": "Resin Art E-Commerce Platform",
         "year": 2024,
-        "role": "Lead Developer",
-        "cover": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop",
+        "role": "Freelance Frontend Developer",
+        "liveUrl": "https://allure-art.netlify.app/",
+        "cover": "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2680&auto=format&fit=crop",
         "media": [
             {
                 "type": "image",
-                "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop"
+                "url": "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2680&auto=format&fit=crop"
             },
             {
                 "type": "image",
-                "url": "https://images.unsplash.com/photo-1614741118830-c6a6145e3877?q=80&w=2564&auto=format&fit=crop"
+                "url": "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2674&auto=format&fit=crop"
             }
         ],
-        "summary": "A futuristic marketing site for a VR gaming platform, featuring WebGL interactions and spatial audio.",
+        "summary": "A full-featured e-commerce website built for Allure Art, a premium resin art brand. Includes product listings, cart, and Razorpay payment integration for seamless online shopping.",
         "tags": [
-            "WebGL",
-            "Three.js",
-            "React"
+            "React",
+            "E-Commerce",
+            "Razorpay",
+            "Freelance"
         ]
     },
     {
         "id": "project-2",
-        "title": "Mono Finance",
-        "subtitle": "Minimalist Fintech Dashboard",
-        "year": 2025,
-        "role": "Product Designer",
-        "cover": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
+        "title": "Allure Art Workshops",
+        "subtitle": "Online & Offline Workshop Enrollment",
+        "year": 2024,
+        "role": "Freelance Frontend Developer",
+        "liveUrl": "https://workshop-registration-54ffd.web.app/",
+        "cover": "https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=2670&auto=format&fit=crop",
         "media": [
             {
                 "type": "image",
-                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
-            },
-            {
-                "type": "image",
-                "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop"
+                "url": "https://images.unsplash.com/photo-1452860606245-08befc0ff44b?q=80&w=2670&auto=format&fit=crop"
             }
         ],
-        "summary": "A clean, data-heavy dashboard for personal finance tracking with real-time visualization.",
+        "summary": "A dedicated workshop registration platform for Allure Art, enabling customers to discover and enroll in both online and in-studio resin art workshops with expert guidance.",
         "tags": [
-            "Dashboard",
-            "Fintech",
-            "Data Viz"
+            "React",
+            "Firebase",
+            "Workshops",
+            "Freelance"
         ]
     },
     {
         "id": "project-3",
-        "title": "Echoes of Nature",
-        "subtitle": "Digital Conservation Campaign",
-        "year": 2023,
-        "role": "Full Stack Dev",
-        "cover": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=2670&auto=format&fit=crop",
+        "title": "L1AR Playground",
+        "subtitle": "React Component Library for Developers",
+        "year": 2024,
+        "role": "Freelance Developer",
+        "liveUrl": "https://l1ar.vercel.app/",
+        "cover": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2670&auto=format&fit=crop",
         "media": [
             {
                 "type": "image",
-                "url": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=2670&auto=format&fit=crop"
+                "url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2670&auto=format&fit=crop"
             }
         ],
-        "summary": "An award-winning scroll-driven storytelling site raising awareness for endangered ecosystems.",
+        "summary": "A developer-focused playground offering copy-paste ready, production-grade React components built with Tailwind CSS. Designed to help new developers quickly integrate beautiful UI components and icons into their projects.",
         "tags": [
-            "Scrollytelling",
-            "GSAP",
-            "Activism"
+            "React",
+            "Tailwind CSS",
+            "Component Library",
+            "Open Source"
+        ]
+    },
+    {
+        "id": "project-4",
+        "title": "Beey",
+        "subtitle": "Natural Honey & Wellness Brand",
+        "year": 2024,
+        "role": "Freelance Shopify Developer",
+        "liveUrl": "https://beey.in/",
+        "cover": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?q=80&w=2670&auto=format&fit=crop",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?q=80&w=2670&auto=format&fit=crop"
+            }
+        ],
+        "summary": "An e-commerce storefront built on Shopify for Beey, a natural honey and wellness brand. Sells raw honey, beeswax candles, and wellness products while emphasizing ethical sourcing and community empowerment.",
+        "tags": [
+            "Shopify",
+            "E-Commerce",
+            "Wellness",
+            "Freelance"
+        ]
+    },
+    {
+        "id": "project-5",
+        "title": "Kodeo",
+        "subtitle": "Browser-Based Technical Interview Platform",
+        "year": 2025,
+        "role": "SDE 1 — KampusHR",
+        "liveUrl": "https://kodeo.vercel.app/",
+        "cover": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2670&auto=format&fit=crop",
+        "media": [
+            {
+                "type": "image",
+                "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2670&auto=format&fit=crop"
+            }
+        ],
+        "summary": "Built as the first vertical of KampusHR, Kodeo is a browser-based IDE and coding assessment platform for conducting live and take-home technical interviews. Multi-language support, secure, and no setup required — a direct competitor to CoderPad.",
+        "tags": [
+            "React",
+            "Browser IDE",
+            "Technical Interviews",
+            "KampusHR"
         ]
     }
 ]

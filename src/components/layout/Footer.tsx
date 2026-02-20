@@ -7,9 +7,9 @@ export const Footer: React.FC = () => {
                     <a href="mailto:ahlawatabhay21@gmail.com" className="text-base sm:text-xl border-b border-white pb-1 hover:opacity-70 transition-opacity break-all">ahlawatabhay21@gmail.com</a>
                 </div>
                 <div className="flex gap-4 sm:gap-6 text-sm uppercase tracking-widest text-zinc-500 flex-wrap">
-                    <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-                    <a href="#" className="hover:text-white transition-colors">Twitter</a>
-                    <a href="#" className="hover:text-white transition-colors">Instagram</a>
+                    <a href="https://www.linkedin.com/in/abhay-ahlawat-a97b75229/" className="hover:text-white transition-colors">LinkedIn</a>
+                    <a href="https://github.com/abhayahlawat" className="hover:text-white transition-colors">GitHub</a>
+                    <a href="https://www.instagram.com/abhay_ahlawat533/" className="hover:text-white transition-colors">Instagram</a>
                 </div>
             </div>
             <div className="max-w-7xl mx-auto mt-12 sm:mt-20 text-xs text-zinc-700 uppercase flex flex-col sm:flex-row gap-1 sm:gap-0 justify-between">
