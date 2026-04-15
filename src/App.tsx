@@ -13,6 +13,7 @@ import Experience from './sections/Experience';
 import FlowingMenu from './components/ui/FlowingMenu';
 import ChapterIndicator from './components/ui/ChapterIndicator';
 import WelcomeScreen from './components/WelcomeScreen';
+import AudioController from './components/ui/AudioController';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -66,6 +67,7 @@ function App() {
 
   return (
     <main className="antialiased bg-white text-black selection:bg-black selection:text-white relative">
+      <AudioController />
       {showWelcome && <WelcomeScreen onComplete={handleWelcomeComplete} />}
 
       {!showWelcome && (

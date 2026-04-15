@@ -48,6 +48,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Ensure all clickable items globally have a pointer cursor */
+a,
+button,
+[role="button"] {
+  cursor: pointer !important;
+}
+
 body.scroll-locked {
   overflow: hidden !important;
 }
